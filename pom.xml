@@ -14,7 +14,7 @@
 	<name>miportfolio</name>
 	<description>Proyecto Integrador #YoProgramo</description>
 	<properties>
-		<java.version>11</java.version>
+		
 	</properties>
 	<dependencies>
 		<dependency>
