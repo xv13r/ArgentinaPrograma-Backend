@@ -78,7 +78,7 @@ public class SocialController {
             Social social = _mapper.toEntity(request);
             social.setProfile(profile);
 
-            return ResponseEntity.ok().body(_mapper.toResponse(_serviceProfile.create(social)));
+            return ResponseEntity.ok().body(_mapper.toResponse(_serviceSocial.create(social)));
         } catch (ValidationException ex) {
             return ResponseEntity.badRequest().body(new ResponseMessage("Error de validación"));
         }
