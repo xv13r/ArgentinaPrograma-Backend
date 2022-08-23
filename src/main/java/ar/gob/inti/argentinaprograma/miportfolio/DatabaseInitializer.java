@@ -24,7 +24,7 @@ import ar.gob.inti.argentinaprograma.miportfolio.service.impl.UserService;
 
 @Component
 public class DatabaseInitializer implements ApplicationListener<ApplicationReadyEvent> {
-    boolean alreadySetup = true;
+    boolean alreadySetup = false;
 
     @Autowired
     private CategoryService _categoryService;
