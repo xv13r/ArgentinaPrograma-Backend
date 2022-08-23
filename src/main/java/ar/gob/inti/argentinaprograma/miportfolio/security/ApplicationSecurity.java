@@ -107,7 +107,7 @@ public class ApplicationSecurity extends WebSecurityConfigurerAdapter {
 		CorsConfiguration config = new CorsConfiguration();
 		config.setAllowCredentials(true);
 		config.setAllowedOrigins(Arrays.asList(allowedOrigins));
-		config.addAllowedHeader(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type",
+		config.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type",
                 "Accept", "Authorization", "Origin, Accept", "X-Requested-With",
                 "Access-Control-Request-Method", "Access-Control-Request-Headers"));
 		config.setExposedHeaders(Arrays.asList("Origin", "Content-Type", "Accept", "Authorization",
