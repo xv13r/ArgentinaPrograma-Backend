@@ -111,7 +111,7 @@ public class ApplicationSecurity extends WebSecurityConfigurerAdapter {
                 "Access-Control-Request-Method", "Access-Control-Request-Headers"));
 		config.setExposedHeaders(List.of("Origin", "Content-Type", "Accept", "Authorization",
                 "Access-Control-Allow-Origin", "Access-Control-Allow-Origin", "Access-Control-Allow-Credentials"));
-		config.addAllowedMethod(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+		config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 		config.setMaxAge(MAX_AGE_SECS);
 		source.registerCorsConfiguration("/**", config);
 		return new CorsFilter(source);
