@@ -105,7 +105,8 @@ public class ApplicationSecurity extends WebSecurityConfigurerAdapter {
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		CorsConfiguration config = new CorsConfiguration();
 		config.setAllowCredentials(true);
-		config.setAllowedOriginPatterns(List.of(allowedOrigins));
+		/*config.setAllowedOriginPatterns(List.of(allowedOrigins));*/
+		config.setAllowedOrigins("*");
 		config.addAllowedHeader("*");
 		config.addAllowedMethod("*");
 		config.setMaxAge(MAX_AGE_SECS);
