@@ -31,27 +31,4 @@ public class ProfileControllerTests {
 
     @MockBean
     private IProfileService _serviceProfile;
-
-    @Test
-    void shouldReturnListOfPersons() throws Exception {
-        // List<Profile> profiles = new ArrayList<>(
-        //         Arrays.asList(
-        //                 new Profile("name1", "lastname1", "profile1", Date.valueOf("2022-04-05"), "about1", "title1"),
-        //                 new Profile("name2", "lastname2",  "profile2", Date.valueOf("2022-04-05"), "about2", "title2"),
-        //                 new Profile("name3", "lastname3",  "profile3", Date.valueOf("2022-04-05"), "about3", "title3")
-        //         )
-        // );
-
-        // when(_serviceProfile.findAll()).thenReturn(profiles);
-
-        // mockMvc.perform(get("/api/profile"))
-        //         .andExpect(status().isOk())
-        //         .andExpect(jsonPath("$.size()").value(profiles.size()))
-        //         .andDo(print());
-    }
-
-@Test
-void testGetAll() {
-        
-}
 }
